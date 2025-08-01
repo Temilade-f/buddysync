@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Deletion - BuddySync</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ["Georgia", "Cambria", "Times New Roman", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: Georgia, Cambria, "Times New Roman", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-all duration-300 bg-transparent">
+      <div class="px-10 py-1">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-2">
+            <h1 class="text-2xl tracking-[-0.03em] font-charter font-bold">BuddySync</h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- main body -->
+    <main class="min-h-screen bg-[#FAFAFA] text-[#09090B] flex flex-col">
+      <div class="container mx-auto px-4 flex flex-col flex-grow">
+        <div class="max-w-4xl mx-auto pb-16 pt-32 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-4xl font-charter font-bold mb-7">
+            Account Deletion – BuddySync
+          </h1>
+          <p class="text-lg mb-8">
+            You can delete your BuddySync account at any time directly from within the app.
+          </p>
+
+          <section class="mb-12">
+            <h2 class="font-bold mb-4 text-2xl font-charter">To delete your account:</h2>
+            <div class="border-l-2 border-gray-700 pl-6 mb-8">
+              <ol class="list-decimal list-inside space-y-4 text-gray-600">
+                <li class="pl-2">Open the BuddySync app</li>
+                <li class="pl-2">Go to Settings</li>
+                <li class="pl-2">Tap Delete Account</li>
+                <li class="pl-2">Confirm your choice</li>
+              </ol>
+            </div>
+          </section>
+
+          <section class="mb-12">
+            <h2 class="font-bold mb-4 text-2xl font-charter">What happens after deletion?</h2>
+            <div class="border-l-2 border-gray-700 pl-6 mb-8">
+              <p class="text-gray-600">
+                Once deleted, all your data (profile, messages, tags, preferences, etc.) will be permanently removed from our systems within 7 days.
+              </p>
+            </div>
+          </section>
+
+          <section class="mb-12">
+            <h2 class="font-bold mb-4 text-2xl font-charter">Need help?</h2>
+            <div class="border-l-2 border-gray-700 pl-6 mb-8">
+              <p class="text-gray-600 mb-4">
+                For further assistance with account deletion, please contact our support team:
+              </p>
+              <div class="bg-[#d4d3d350] p-6 rounded-lg">
+                <p class="font-semibold mb-2">Email:</p>
+                <p class="mb-6"><a href="mailto:support@buddysync.app" class="text-[#09090B] underline underline-offset-4">support@buddysync.app</a></p>
+              </div>
+            </div>
+          </section>
+
+          <!-- footer -->
+          <footer class="pt-8 xl:pb-2 md:pb-4 text-center mt-auto">
+            <div class="flex flex-col items-center justify-center gap-8">
+              <div class="flex justify-center items-center space-x-6 text-sm">
+                <a href="/policy.html" class="text-gray-500 hover:text-[#09090B] transition-colors duration-200">Privacy Policy</a>
+                <a href="/terms.html" class="text-gray-500 hover:text-[#09090B] transition-colors duration-200">Terms of Service</a>
+                <a href="/delete.html" class="text-gray-500 hover:text-[#09090B] transition-colors duration-200">Account Deletion</a>
+              </div>
+            </div>
+          </footer>
+        </div> 
+      </div>
+    </main>
+  </body>
+</html>
